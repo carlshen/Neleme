@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom"
-        android:background="#454545">
+        android:background="@color/color_pink">
 
         <TextView
             android:id="@+id/car_nonselect"

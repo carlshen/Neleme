@@ -42,12 +42,12 @@ public final class AppBarBehavior extends AppBarLayout.Behavior {
 	public boolean onLayoutChild(CoordinatorLayout parent, AppBarLayout abl, int layoutDirection) {
 		boolean handled = super.onLayoutChild(parent, abl, layoutDirection);
 		// 需要在调用过super.onLayoutChild()方法之后获取
-		if (cutExpHeight <= 0) {
-			View ll_cut = parent.findViewById(R.id.ll_cut);
-			cutExpHeight = (int) (ll_cut.getHeight() - mContext.getResources().getDimension(R.dimen.cut_margin));
-			cutMaxHeight = ViewUtils.dip2px(mContext, 30) + cutExpHeight;
-			scroll_container = parent.findViewById(R.id.scroll_container);
-		}
+//		if (cutExpHeight <= 0) {
+//			View ll_cut = parent.findViewById(R.id.ll_cut);
+//			cutExpHeight = (int) (ll_cut.getHeight() - mContext.getResources().getDimension(R.dimen.cut_margin));
+//			cutMaxHeight = ViewUtils.dip2px(mContext, 30) + cutExpHeight;
+//			scroll_container = parent.findViewById(R.id.scroll_container);
+//		}
 		return handled;
 
 	}

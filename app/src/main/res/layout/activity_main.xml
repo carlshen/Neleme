@@ -19,64 +19,12 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="65dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_cut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="8dp"
-        app:layout_behavior="@string/scroll_behavior">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <TextView
-                style="@style/cut_style"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:text="新用户下单立加11元" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="expendCut"
-                android:text="8个活动"
-                android:textSize="11sp" />
-        </LinearLayout>
-
-
-        <TextView
-            style="@style/cut_style"
-            android:text="满20减21，满50减55，满100减200" />
-
-        <TextView
-            style="@style/cut_style"
-            android:text="进店领10折优惠券" />
-
-        <TextView
-            style="@style/cut_style"
-            android:text="虽然店名有些随意了" />
-
-        <TextView
-            style="@style/cut_style"
-            android:text="因为我还没有接到广告" />
-
-        <TextView
-            style="@style/cut_style"
-            android:text="但是给个star我会很有动力的" />
-
-        <TextView style="@style/cut_style" />
-    </LinearLayout>
 
     <com.k.neleme.Views.ShopInfoContainer
         android:id="@+id/shopcontainer"
@@ -90,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
-        android:paddingTop="25dp"
+        android:paddingTop="5dp"
         app:layout_collapseMode="pin"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
